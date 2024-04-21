@@ -1,0 +1,46 @@
+<!-- Input Section -->
+<div id="input-section">
+    <label for="colorInput">Enter Color and Number Pairs:</label>
+    <input type="text" id="colorInput" placeholder="e.g., red:45,blue:90" />
+    <button id="submitButton">Submit</button>
+    <div id="validationMessage" style="color: red;"></div>
+</div>
+
+document.getElementById("submitButton").addEventListener("click", function() {
+    const input = document.getElementById("colorInput").value.trim();
+    const validationMessage = document.getElementById("validationMessage");
+
+    // Regular expression to validate input format
+    const regex = /^([a-zA-Z]+:\d+)(,[a-zA-Z]+:\d+)*$/;
+
+    if (!regex.test(input)) {
+        validationMessage.textContent = "Invalid input format. Please enter color and number pairs in the format: color:number, ...";
+        return;
+    }
+
+    const pairs = input.split(",");
+    
+    // Validate each pair
+    for (let pair of pairs) {
+        const [color, angle] = pair.split(":");
+        
+        // Validate color
+        const allowedColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "pink", "brown", "black"];
+        if (!allowedColors.includes(color)) {
+            validationMessage.textContent = `Invalid color: ${color}. Allowed colors are: red, orange, yellow, green, blue, indigo, violet, pink, brown, and black.`;
+            return;
+        }
+
+        // Validate angle
+        const angleValue = parseInt(angle, 10);
+        if (isNaN(angleValue) || angleValue < 1 || angleValue > 360) {
+            validationMessage.textContent = `Invalid angle: ${angle}. Angle must be a whole number between 1 and 360.`;
+            return;
+        }
+    }
+
+    // Clear validation message if input is valid
+    validationMessage.textContent = "";
+
+    // TODO: Process the valid input (we'll implement this later)
+});
