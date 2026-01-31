@@ -1,1 +1,50 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #f5f5f5;
+  padding: 3rem;
+}
+
+header {
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+p {
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.projects h2 {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
