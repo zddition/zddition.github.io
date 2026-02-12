@@ -5,7 +5,7 @@ const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
   { time: "12:00 AM", title: "Cuddle!", details: "We start with an 8-hour cuddle session through the night." },
   { time: "8:00 AM", title: "Wake! + Breakfast!", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/." },
-  { time: "10:30 AM", title: "Board Games!", details: "Bring your rummikub set. I'm getting my revenge :)" },
+  { time: "10:30 AM", title: "Board Games!", details: "Bring your rummikub set. I'm getting my revenge 😚" },
   { time: "1:00 PM", title: "Lunch!", details: "Delicious sushi at https://sugarfishsushi.com/. There is no reservation available so it might be a wait. But from what I've heard, definitely worth it! Or if you would prefer a more concrete plan, I can make a reservation at a specific place." },
   { time: "3:00 PM", title: "Museum!", details: "We are finally going to a museum! Specifically, the Norton Simon Museum!! You'll be the prettiest work of art there so don't mind if I'm looking at you the whole time. Bring your student ID if you have it still please." },
   { time: "7:00 PM", title: "Dinner!", details: "A romantic dinner at a secret restaurant (if you really want to know, we both know I can't keep a secret, so just ask!)." },
@@ -118,10 +118,10 @@ addPromiseBtn.addEventListener("click", () => {
 
 // Cute yes/no
 yesBtn.addEventListener("click", () => {
-  yesBtn.textContent = "I LOVE YOU 💘";
+  yesBtn.textContent = "I LOVE YOU 🧡🧡🧡";
   yesBtn.disabled = true;
   noBtn.disabled = true;
-  noText.textContent = "I can't wait to see you!";
+  noText.textContent = "I can't wait to see you!! 😍";
   if (confettiToggle.checked) startConfettiBurst(60);
 });
 
@@ -129,9 +129,9 @@ let noCount = 0;
 const noLines = [
   "wrong button. try again?",
   "the other one!",
-  "please Gauri this is not funny",
+  "please Gauri this is not funny 😐",
   "one last try",
-  "oh ok (you can still click yes btw)",
+  "oh... ok (you can still click yes btw)",
 ];
 
 noBtn.addEventListener("click", () => {
