@@ -8,6 +8,7 @@ const stops = [
   { time: "7:45 PM", title: "Walk + photos", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
   { time: "8:30 PM", title: "Activity / surprise", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
   { time: "10:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
+  { time: "6:00 PM", title: "Dinner", badge: "food", details: "Reservation at <a href="https://restaurantwebsite.com" target="_blank"> Osteria Example </a>.  Dress code: cute."}
 ];
 
 const defaultPromises = [
@@ -57,11 +58,11 @@ function renderStops() {
     li.className = "stop";
     li.innerHTML = `
       <button type="button" aria-expanded="false">
-        <div class="title">
-          <span class="badge">${escapeHtml(s.time)}</span>
-          <span>${escapeHtml(s.title)}</span>
-          <span class="badge">${escapeHtml(s.badge)}</span>
-        </div>
+        // <div class="title">
+        //   <span class="badge">${escapeHtml(s.time)}</span>
+        //   <span>${escapeHtml(s.title)}</span>
+        //   <span class="badge">${escapeHtml(s.badge)}</span>
+        // </div>
         <span class="chev">›</span>
       </button>
       <div class="details">${escapeHtml(s.details)}</div>
