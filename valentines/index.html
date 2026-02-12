@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>💘 Valentine’s Itinerary</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+<body>
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="pill">✨ just us ✨</div>
+      <h1>Valentine’s Day Plan</h1>
+      <p class="sub">
+        A tiny website for a tiny adventure. Click around. 💗
+      </p>
+
+      <section class="gate" id="gate">
+        <div class="gate-card">
+          <h2>Enter our secret page</h2>
+          <p class="muted">Optional “passphrase” so it feels special (not real security).</p>
+          <div class="row">
+            <input id="pass" type="password" placeholder="passphrase (optional)" autocomplete="off" />
+            <button id="enterBtn" class="btn primary">Enter</button>
+          </div>
+          <p class="hint">
+            Tip: set a cute passphrase like <code>ourfirstdate</code> inside <code>script.js</code>.
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <section class="card hidden" id="content">
+      <div class="topbar">
+        <div>
+          <h2>Our itinerary</h2>
+          <p class="muted">Tap each stop to reveal the details.</p>
+        </div>
+        <div class="toggles">
+          <label class="toggle">
+            <input type="checkbox" id="confettiToggle" checked />
+            <span>confetti</span>
+          </label>
+          <button id="replayBtn" class="btn">Replay ✨</button>
+        </div>
+      </div>
+
+      <ol class="timeline" id="timeline">
+        <!-- You can edit these stops easily in script.js -->
+      </ol>
+
+      <div class="divider"></div>
+
+      <section class="extras">
+        <div class="extra">
+          <h3>Little promises 💞</h3>
+          <ul class="list" id="promises"></ul>
+          <button id="addPromiseBtn" class="btn small">Add one</button>
+        </div>
+
+        <div class="extra">
+          <h3>One question…</h3>
+          <p class="muted">Choose wisely 😌</p>
+          <div class="row">
+            <button id="yesBtn" class="btn primary">Yes</button>
+            <button id="noBtn" class="btn danger">No</button>
+          </div>
+          <p class="muted tiny" id="noText"></p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="muted">
+          Made with 💘 by you. (If you want, add photos in <code>assets/</code> and link them in the stops.)
+        </p>
+      </footer>
+    </section>
+  </main>
+
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
