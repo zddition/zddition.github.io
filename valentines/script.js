@@ -3,11 +3,11 @@
 // ===============================
 const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
-  { time: "5:30 PM", title: "Meet + Hug (mandatory)", badge: "start", details: "We meet, we hug, we do a tiny ‘we’re doing this’ moment." },
-  { time: "6:00 PM", title: "Dinner", badge: "food", details: "Reservation at: _____. Dress code: cute. We order one thing we’ve never tried." },
-  { time: "7:45 PM", title: "Walk + photos", badge: "soft", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
-  { time: "8:30 PM", title: "Activity / surprise", badge: "✨", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
-  { time: "10:00 PM", title: "Wind down", badge: "end", details: "Tea / playlist / talk about our favorite moment of the day." },
+  { time: "12:00 AM", title: "Cuddle + Cuddle + Cuddle!!", details: "We start with an 8-hour cuddle session through the night" },
+  { time: "8:00 AM", title: "Wake + Breakfast", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/" },
+  { time: "7:45 PM", title: "Walk + photos", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
+  { time: "8:30 PM", title: "Activity / surprise", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
+  { time: "10:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
 ];
 
 const defaultPromises = [
