@@ -5,11 +5,10 @@ const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
   { time: "12:00 AM", title: "Cuddle + Cuddle + Cuddle!!", details: "We start with an 8-hour cuddle session through the night" },
   { time: "8:00 AM", title: "Wake + Breakfast", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/" },
-  { time: "11:00 AM", title: "Walk + photos", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
-  { time: "1:00 PM", title: "Activity / surprise", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
-  { time: "3:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
-  { time: "3:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
-  { time: "6:00 PM", title: "Dinner", badge: "food", details: "Reservation at <a href="https://restaurantwebsite.com" target="_blank"> Osteria Example </a>.  Dress code: cute."}
+  { time: "10:30 AM", title: "Board Games", details: "Bring your rummikub set. I'm getting my revenge :)" },
+  { time: "1:00 PM", title: "Lunch", details: "Delicious sushi at https://sugarfishsushi.com/. There is no reservation available so it might be a wait. But from what I've heard, definitely worth it. Or if you would prefer a more concrete plan, I can make a reservation at a specific place." },
+  { time: "3:00 PM", title: "Museum or Movie", details: "Gauri's choice! We can visit the Norton Simon Museum or watch a movie at home!" },
+  { time: "3:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." }
 ];
 
 const defaultPromises = [
