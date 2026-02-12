@@ -3,13 +3,13 @@
 // ===============================
 const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
-  { time: "12:00 AM", title: "Cuddle!", details: "We start with an 8-hour cuddle session through the night" },
-  { time: "8:00 AM", title: "Wake! + Breakfast!", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/" },
+  { time: "12:00 AM", title: "Cuddle!", details: "We start with an 8-hour cuddle session through the night." },
+  { time: "8:00 AM", title: "Wake! + Breakfast!", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/." },
   { time: "10:30 AM", title: "Board Games!", details: "Bring your rummikub set. I'm getting my revenge :)" },
-  { time: "1:00 PM", title: "Lunch!", details: "Delicious sushi at https://sugarfishsushi.com/. There is no reservation available so it might be a wait. But from what I've heard, definitely worth it. Or if you would prefer a more concrete plan, I can make a reservation at a specific place." },
-  { time: "3:00 PM", title: "Museum!", details: "Gauri's choice! We can visit the Norton Simon Museum or watch a movie at home!" },
-  { time: "7:00 PM", title: "Dinner!", details: "Tea / playlist / talk about our favorite moment of the day." },
-  { time: "9:00 PM", title: "Unwind", details: "Tea / playlist / talk about our favorite moment of the day." }
+  { time: "1:00 PM", title: "Lunch!", details: "Delicious sushi at https://sugarfishsushi.com/. There is no reservation available so it might be a wait. But from what I've heard, definitely worth it! Or if you would prefer a more concrete plan, I can make a reservation at a specific place." },
+  { time: "3:00 PM", title: "Museum!", details: "We are finally going to a museum! Specifically, the Norton Simon Museum!! You'll be the prettiest work of art there so don't mind if I'm looking at you 24/7. Bring your student ID if you have it still." },
+  { time: "7:00 PM", title: "Dinner!", details: "A romantic dinner at a secret restaurant (If you really want to know, we both know I can't keep a secret, so just ask!)." },
+  { time: "9:00 PM", title: "Unwind!", details: "We come home and spend quality time together, just the two of us :) A nice late-night tea or a glass of red wine. Gauri's choice!" }
 ];
 
 const defaultPromises = [
@@ -19,7 +19,7 @@ const defaultPromises = [
   "100 minutes of me staring into your eyes",
   "100 butt-touches",
   "100 sips of water",
-  "100 
+  "10000000000000 lovely moments with my love"
 ];
 
 // ===============================
