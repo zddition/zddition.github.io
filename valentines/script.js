@@ -5,16 +5,18 @@ const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
   { time: "12:00 AM", title: "Cuddle + Cuddle + Cuddle!!", details: "We start with an 8-hour cuddle session through the night" },
   { time: "8:00 AM", title: "Wake + Breakfast", details: "We can sleep in if we want, but we might miss these delicious pastries! https://saltedbutter.co/" },
-  { time: "7:45 PM", title: "Walk + photos", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
-  { time: "8:30 PM", title: "Activity / surprise", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
-  { time: "10:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
+  { time: "11:00 AM", title: "Walk + photos", details: "Short walk. One photo we’ll actually keep. Bonus: stop for dessert if we see it." },
+  { time: "1:00 PM", title: "Activity / surprise", details: "Idea: mini golf / arcade / movie / museum night / home candle setup. Put your plan here." },
+  { time: "3:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
+  { time: "3:00 PM", title: "Wind down", details: "Tea / playlist / talk about our favorite moment of the day." },
   { time: "6:00 PM", title: "Dinner", badge: "food", details: "Reservation at <a href="https://restaurantwebsite.com" target="_blank"> Osteria Example </a>.  Dress code: cute."}
 ];
 
 const defaultPromises = [
-  "I will hold your hand whenever you want.",
-  "I will take at least one good photo of you (no excuses).",
-  "I will be fully present tonight.",
+  "100 kisses :* Each.",
+  '100 "I love you"s',
+  "100 jumping jacks",
+  "100 
 ];
 
 // ===============================
@@ -58,11 +60,11 @@ function renderStops() {
     li.className = "stop";
     li.innerHTML = `
       <button type="button" aria-expanded="false">
-        // <div class="title">
-        //   <span class="badge">${escapeHtml(s.time)}</span>
-        //   <span>${escapeHtml(s.title)}</span>
-        //   <span class="badge">${escapeHtml(s.badge)}</span>
-        // </div>
+        <div class="title">
+          <span class="badge">${escapeHtml(s.time)}</span>
+          <span>${escapeHtml(s.title)}</span>
+          <span class="badge">${escapeHtml(s.badge)}</span>
+        </div>
         <span class="chev">›</span>
       </button>
       <div class="details">${escapeHtml(s.details)}</div>
