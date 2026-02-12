@@ -1,7 +1,7 @@
 // ===============================
 // Customize these 👇
 // ===============================
-const PASSPHRASE = ""; // e.g. "ourfirstdate" (leave "" to disable)
+const PASSPHRASE = "orange"; // e.g. "ourfirstdate" (leave "" to disable)
 const stops = [
   { time: "5:30 PM", title: "Meet + Hug (mandatory)", badge: "start", details: "We meet, we hug, we do a tiny ‘we’re doing this’ moment." },
   { time: "6:00 PM", title: "Dinner", badge: "food", details: "Reservation at: _____. Dress code: cute. We order one thing we’ve never tried." },
