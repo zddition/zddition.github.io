@@ -66,7 +66,6 @@ function renderStops() {
         <div class="title">
           <span class="badge">${escapeHtml(s.time)}</span>
           <span>${escapeHtml(s.title)}</span>
-          <span class="badge">${escapeHtml(s.badge)}</span>
         </div>
         <span class="chev">›</span>
       </button>
